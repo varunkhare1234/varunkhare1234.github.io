@@ -6,9 +6,87 @@
     <description>Recent content on Varun</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 11 Jul 2019 10:02:51 +0530</lastBuildDate>
     
 	    <atom:link href="https://vkkhare.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Zero Shot Object Detection</title>
+      <link>https://vkkhare.github.io/project/zero-shot-object-detection/</link>
+      <pubDate>Thu, 11 Jul 2019 10:02:51 +0530</pubDate>
+      
+      <guid>https://vkkhare.github.io/project/zero-shot-object-detection/</guid>
+      <description>&lt;p&gt;Zero shot detection greatly exacerbates the the problem of zero shot recognition. Not only training the classifiers pose a problem, we have to make the region proposal network learn to detect objects from unseen categories. These during training typically lie in the background.&lt;/p&gt;
+
+&lt;p&gt;Our novelty lies in exploiting the visual consistency of the attributes via learning to detect attributes first and then combining these detections by a combinator module into final object detections. We employ spatial transformer networks to propagate the gradients across the combinator and RPNs. This was necessary due to unavailability of external bounding box annotations for attributes. It made it impossible to train RPN and combinator independently from classifier unlike faster-RCNN style architectures.&lt;/p&gt;
+
+&lt;p&gt;This is work in progress and we aim to publish our results soon.&amp;rdquo;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Word Problem Solver</title>
+      <link>https://vkkhare.github.io/project/word-problem-solver/</link>
+      <pubDate>Thu, 11 Jul 2019 09:57:28 +0530</pubDate>
+      
+      <guid>https://vkkhare.github.io/project/word-problem-solver/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adversarial Corruption</title>
+      <link>https://vkkhare.github.io/project/adversarial-corruption/</link>
+      <pubDate>Wed, 11 Apr 2018 09:57:10 +0530</pubDate>
+      
+      <guid>https://vkkhare.github.io/project/adversarial-corruption/</guid>
+      <description>&lt;p&gt;Neural Networks have been observed to be robust to even adversarial corruptions. However, only a handful of theoretical results exist which guarantee robustness of NNs. We have made an attempt to address this, using results and techniques from robust statistics.
+To measure the robustness of an algorithm, we want to derive its breakdown point which is the largest number of adversarially corrupted points an algorithm can handle and still guarantee recovery. The presence of breakdown point results for simpler learners like linear regression was a primary motivation to pursue this project using robust statistics.&lt;/p&gt;
+
+&lt;p&gt;To simplify the problem, we consider the case of regression only single hidden layer neural networks with ReLU activation on each node and an output node with no activation with squared loss function. We analysed two different training procedures and how it can change the training trajectory to affect the final convergence. One apprach utilised the property of &lt;strong&gt;ReLU&lt;/strong&gt; of dividing the input space into 2 halves (active and unactive). Another approach split the problem as a difference of convex functions and we used alternating optimization to train it. This training procedure was well behaved in terms of convergence and theoretically sound.&lt;/p&gt;
+
+&lt;p&gt;For complete details about these approaches please look in the attached pdf.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>AR Navigation</title>
+      <link>https://vkkhare.github.io/project/ar-navigation/</link>
+      <pubDate>Wed, 06 Jul 2016 16:42:00 +0530</pubDate>
+      
+      <guid>https://vkkhare.github.io/project/ar-navigation/</guid>
+      <description>
+
+&lt;h3 id=&#34;about-the-project&#34;&gt;About The Project&lt;/h3&gt;
+
+&lt;p&gt;We tried out experimenting Augmented Reality as a summer project. Our aim was to design a navigation app which instead of showing top view of map shows directions on real time camera feed. This will have two fold benefits:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The users will not have to match roads and adjust map to understand where to go&lt;/li&gt;
+&lt;li&gt;Since it shows real time camera feed the user can remain in real world while looking for directions preventing accidents&lt;/li&gt;
+&lt;li&gt;Received the &lt;strong&gt;Best Programming Club Project&lt;/strong&gt; during the Science &amp;amp; Technology Summer Camp 2016.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;approach-to-inculcate-ar-in-android-app&#34;&gt;Approach to inculcate AR in android app&lt;/h3&gt;
+
+&lt;p&gt;Unlike infrared sensors we didn&amp;rsquo;t have any means to calculate the exact distance of the real time objects in the mobiles so we switched to MATHEMATICS for our answers. OH! Technical Arts also played a key role in devising our strategy.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;We used GPS data combiined with mobiles orientation from Magnetic Compass to detect roads. Here Google Directions API came in handy to give the precise coordinates of the roads.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;We measured the relative motion of the user via gyroscope, accelerometer and GPS coordinates&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The Unity graphics were relayed on the camera feed via UNITY GAME ENGINE giving the graphics (navigating arrows) a psuedo-acceleration to look static on the ground.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sitepoint.com/how-to-build-an-ar-android-app-with-vuforia-and-unity/&#34; target=&#34;_blank&#34;&gt;https://www.sitepoint.com/how-to-build-an-ar-android-app-with-vuforia-and-unity/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Android Documentation&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
   </channel>
 </rss>

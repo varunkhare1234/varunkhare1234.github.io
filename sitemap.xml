@@ -3,8 +3,101 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://vkkhare.github.io/authors/varun/</loc>
-    <lastmod>2019-07-10T00:13:08+05:30</lastmod>
+    <loc>https://vkkhare.github.io/project/</loc>
+    <lastmod>2019-07-11T10:02:51+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vkkhare.github.io/tags/</loc>
+    <lastmod>2019-07-11T10:02:51+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vkkhare.github.io/</loc>
+    <lastmod>2019-07-11T10:02:51+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vkkhare.github.io/project/zero-shot-object-detection/</loc>
+    <lastmod>2019-07-11T10:02:51+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vkkhare.github.io/tags/computer_vision/</loc>
+    <lastmod>2019-07-11T10:02:51+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vkkhare.github.io/tags/deep_learning/</loc>
+    <lastmod>2019-07-11T10:02:51+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vkkhare.github.io/tags/object_detection/</loc>
+    <lastmod>2019-07-11T10:02:51+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vkkhare.github.io/tags/transformer_networks/</loc>
+    <lastmod>2019-07-11T10:02:51+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vkkhare.github.io/tags/zero_shot/</loc>
+    <lastmod>2019-07-11T10:02:51+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vkkhare.github.io/project/word-problem-solver/</loc>
+    <lastmod>2019-07-11T09:57:28+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vkkhare.github.io/project/adversarial-corruption/</loc>
+    <lastmod>2018-04-11T09:57:10+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vkkhare.github.io/categories/</loc>
+    <lastmod>2018-04-11T09:57:10+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vkkhare.github.io/tags/relu/</loc>
+    <lastmod>2018-04-11T09:57:10+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vkkhare.github.io/tags/adversarial_corruption/</loc>
+    <lastmod>2018-04-11T09:57:10+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vkkhare.github.io/categories/research/</loc>
+    <lastmod>2018-04-11T09:57:10+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vkkhare.github.io/tags/theory/</loc>
+    <lastmod>2018-04-11T09:57:10+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vkkhare.github.io/project/ar-navigation/</loc>
+    <lastmod>2016-07-06T16:42:00+05:30</lastmod>
   </url>
   
   <url>
@@ -14,8 +107,28 @@
   </url>
   
   <url>
-    <loc>https://vkkhare.github.io/categories/</loc>
+    <loc>https://vkkhare.github.io/tags/augmented_reality/</loc>
+    <lastmod>2016-07-06T16:42:00+05:30</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vkkhare.github.io/categories/project/</loc>
+    <lastmod>2016-07-06T16:42:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vkkhare.github.io/authors/divyat/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vkkhare.github.io/authors/harsh/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vkkhare.github.io/authors/varun/</loc>
+    <lastmod>2019-07-10T00:13:08+05:30</lastmod>
   </url>
   
   <url>
@@ -36,16 +149,6 @@
   <url>
     <loc>https://vkkhare.github.io/talk/</loc>
     <lastmod>2019-05-06T17:54:11+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vkkhare.github.io/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://vkkhare.github.io/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

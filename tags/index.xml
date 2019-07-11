@@ -6,9 +6,91 @@
     <description>Recent content in Tags on Varun</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 11 Jul 2019 10:02:51 +0530</lastBuildDate>
     
 	    <atom:link href="https://vkkhare.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>computer_vision</title>
+      <link>https://vkkhare.github.io/tags/computer_vision/</link>
+      <pubDate>Thu, 11 Jul 2019 10:02:51 +0530</pubDate>
+      
+      <guid>https://vkkhare.github.io/tags/computer_vision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>deep_learning</title>
+      <link>https://vkkhare.github.io/tags/deep_learning/</link>
+      <pubDate>Thu, 11 Jul 2019 10:02:51 +0530</pubDate>
+      
+      <guid>https://vkkhare.github.io/tags/deep_learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>object_detection</title>
+      <link>https://vkkhare.github.io/tags/object_detection/</link>
+      <pubDate>Thu, 11 Jul 2019 10:02:51 +0530</pubDate>
+      
+      <guid>https://vkkhare.github.io/tags/object_detection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>transformer_networks</title>
+      <link>https://vkkhare.github.io/tags/transformer_networks/</link>
+      <pubDate>Thu, 11 Jul 2019 10:02:51 +0530</pubDate>
+      
+      <guid>https://vkkhare.github.io/tags/transformer_networks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>zero_shot</title>
+      <link>https://vkkhare.github.io/tags/zero_shot/</link>
+      <pubDate>Thu, 11 Jul 2019 10:02:51 +0530</pubDate>
+      
+      <guid>https://vkkhare.github.io/tags/zero_shot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReLU</title>
+      <link>https://vkkhare.github.io/tags/relu/</link>
+      <pubDate>Wed, 11 Apr 2018 09:57:10 +0530</pubDate>
+      
+      <guid>https://vkkhare.github.io/tags/relu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>adversarial_corruption</title>
+      <link>https://vkkhare.github.io/tags/adversarial_corruption/</link>
+      <pubDate>Wed, 11 Apr 2018 09:57:10 +0530</pubDate>
+      
+      <guid>https://vkkhare.github.io/tags/adversarial_corruption/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>theory</title>
+      <link>https://vkkhare.github.io/tags/theory/</link>
+      <pubDate>Wed, 11 Apr 2018 09:57:10 +0530</pubDate>
+      
+      <guid>https://vkkhare.github.io/tags/theory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>augmented_reality</title>
+      <link>https://vkkhare.github.io/tags/augmented_reality/</link>
+      <pubDate>Wed, 06 Jul 2016 16:42:00 +0530</pubDate>
+      
+      <guid>https://vkkhare.github.io/tags/augmented_reality/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

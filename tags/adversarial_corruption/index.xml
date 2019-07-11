@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>adversarial_corruption on Varun</title>
+    <link>https://vkkhare.github.io/tags/adversarial_corruption/</link>
+    <description>Recent content in adversarial_corruption on Varun</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Apr 2018 09:57:10 +0530</lastBuildDate>
+    
+	    <atom:link href="https://vkkhare.github.io/tags/adversarial_corruption/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Adversarial Corruption</title>
+      <link>https://vkkhare.github.io/project/adversarial-corruption/</link>
+      <pubDate>Wed, 11 Apr 2018 09:57:10 +0530</pubDate>
+      
+      <guid>https://vkkhare.github.io/project/adversarial-corruption/</guid>
+      <description>&lt;p&gt;Neural Networks have been observed to be robust to even adversarial corruptions. However, only a handful of theoretical results exist which guarantee robustness of NNs. We have made an attempt to address this, using results and techniques from robust statistics.
+To measure the robustness of an algorithm, we want to derive its breakdown point which is the largest number of adversarially corrupted points an algorithm can handle and still guarantee recovery. The presence of breakdown point results for simpler learners like linear regression was a primary motivation to pursue this project using robust statistics.&lt;/p&gt;
+
+&lt;p&gt;To simplify the problem, we consider the case of regression only single hidden layer neural networks with ReLU activation on each node and an output node with no activation with squared loss function. We analysed two different training procedures and how it can change the training trajectory to affect the final convergence. One apprach utilised the property of &lt;strong&gt;ReLU&lt;/strong&gt; of dividing the input space into 2 halves (active and unactive). Another approach split the problem as a difference of convex functions and we used alternating optimization to train it. This training procedure was well behaved in terms of convergence and theoretically sound.&lt;/p&gt;
+
+&lt;p&gt;For complete details about these approaches please look in the attached pdf.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
