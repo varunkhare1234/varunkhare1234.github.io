@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="">
+  <meta name="description" content="There is a large disparity in the access to proper education at the school level. We seek to build a problem aware online tutoring system for students to help improve the situation. In this project, we have made a complete solution generator which, given a word problem on arithmetic at the levels of classes 6-8, extracts relevant information from the question and solves the problem in a step-by-step manner. Currently, we are handling only basic speed, time and distance problems.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://vkkhare.github.io/project/word-problem-solver/">
@@ -103,19 +103,18 @@
   
   
     
-    
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Varun">
   <meta property="og:url" content="https://vkkhare.github.io/project/word-problem-solver/">
   <meta property="og:title" content="Word Problem Solver | Varun">
-  <meta property="og:description" content=""><meta property="og:image" content="https://vkkhare.github.io/img/icon-192.png">
-  <meta property="twitter:image" content="https://vkkhare.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="There is a large disparity in the access to proper education at the school level. We seek to build a problem aware online tutoring system for students to help improve the situation. In this project, we have made a complete solution generator which, given a word problem on arithmetic at the levels of classes 6-8, extracts relevant information from the question and solves the problem in a step-by-step manner. Currently, we are handling only basic speed, time and distance problems."><meta property="og:image" content="https://vkkhare.github.io/project/word-problem-solver/featured.png">
+  <meta property="twitter:image" content="https://vkkhare.github.io/project/word-problem-solver/featured.png"><meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-07-11T09:57:28&#43;05:30">
+  <meta property="article:published_time" content="2017-11-23T09:57:28&#43;05:30">
   
-  <meta property="article:modified_time" content="2019-07-11T09:57:28&#43;05:30">
+  <meta property="article:modified_time" content="2019-07-11T16:43:46&#43;05:30">
   
 
   
@@ -346,26 +345,44 @@
 
 
 
-  
+
+
+
+
+
+
+
 
   
   
-  
+
+
 <div class="article-container pt-3">
   <h1 itemprop="name">Word Problem Solver</h1>
 
   
 
   
+
+
+
+<meta content="2017-11-23 09:57:28 &#43;0530 IST" itemprop="datePublished">
+<meta content="2019-07-11 16:43:46 &#43;0530 IST" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
     
 
 
 
-<meta content="2019-07-11 09:57:28 &#43;0530 IST" itemprop="datePublished">
-<meta content="2019-07-11 09:57:28 &#43;0530 IST" itemprop="dateModified">
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/varun/">Varun Kumar Khare</a></span>
 
-<div class="article-metadata">
-
+  </div>
   
   
 
@@ -373,6 +390,8 @@
   <span class="article-date">
     
     
+      
+          Last updated on
       
     
     <time>Jul 11, 2019</time>
@@ -387,6 +406,11 @@
   
 
   
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="/categories/project/">project</a></span>
   
 
   
@@ -480,13 +504,23 @@
 
 </div>
 
-    
+  
 
 
 
 
 
 
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
 
 
 
@@ -496,6 +530,50 @@
 
 
   
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="/files/word_problem_report.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/vkkhare/word_problem_solver" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 678px; max-height: 312px;">
+  <div style="position: relative">
+    <img src="/project/word-problem-solver/featured.png" alt="" class="featured-image">
+    
+  </div>
 </div>
 
 
@@ -504,10 +582,76 @@
 
     <div class="article-style" itemprop="articleBody">
       
+
+<h3 id="problem-statement"><strong>Problem Statement</strong></h3>
+
+<p>Given a preliminary word problem based on speed, time and distance
+relationship in natural language, generate a step-by-step solution for it</p>
+
+<h3 id="proposed-solution"><strong>Proposed Solution</strong></h3>
+
+<p>Our approach to solve mathematical word problems is based on the ability of represent the problem via relationships between various object described in the text. We start out by creating a graph which represents the hypothetical world described in the problem with a global function space defining the rules/association between different types of objects.</p>
+
+<p>We keep on adding nodes in the graph as when a new object (Noun Phrase) appears in the text and depict the association between two objects by an edge between them. If multiple functions are there multiple types of edges need to be created. If a Noun Phrase is an anaphora, all the objects which would have been linked to this noun phrase would instead be linked with the representative mention and node corresponding to the current Noun Phrase won’t be added to the graph.</p>
+
+<p>A set of nodes are eligible as arguments for a function iff they correspond to the object types used in the functional relationship and are connected by edges corresponding to the function. Each measurable quantity has a value attribute associated to it which
+stores the value of that quantity. Once the graph is generated, we need to calculate the value of the query node. To do this, we traverse the graph starting DFS at query node (Top-Down approach) and check if we are able to calculate its value along any one of the computation path. We work recursively to evaluate all the nodes of the computation path from leaf and then finally evaluate the value of the root node. The following figures explain the graph construction.
+<img src="/img/word_prob.png" alt="automated concept graph generation" /></p>
+
+<p><em>The implimentation details are available in project report.</em></p>
+
+<h3 id="testing"><strong>Testing</strong></h3>
+
+<p>The problems that it could understand were restricted and testing needed a controlled environment. The biggest challenge that we faced was handling prior world knowledge in the system. Currently, we only took those problem which didn’t need this world-knowledge for evaluation. This assumption seems a bit heavy so, we came up with an approach to incorporate it and have left it under future work for testing and validating its effectiveness.</p>
+
+<p>We also assumed that the problems didn’t need the knowledge of monotonic nature of the quantities and the association of words to modifications in the values of quantities like <em>Late</em> w.r.t <em>time</em> refers to addition of time to certain time object similarly longer w.r.t distance implies higher magnitude.</p>
+
+<p>Owing to a deterministic algorithm for query solving, if the system was able to understand the language it gives the correct answer. So, we took a set of 11 different type of problems that needed only Distance = Speed*Time as relationship. Out of these we were able to solve 7 problems some of which are mentioned below:</p>
+
+<ol>
+<li>How much time Raman will take to cover a distance of 400 km if he runs at a speed of 20 kmph ?</li>
+<li>The distance between two stations is 240 km. A train takes 4 hours to cover that distance. Calculate the speed of the train.</li>
+<li>A person runs a distance of 60 km in 5 hours. What is his speed ?</li>
+<li>Nancy travelled a distance of 455 km by car in 10 hours. Find the speed of the car.</li>
+<li>Ramesh travels at a speed of 30 kmph for a time of 2 hours to travel a certain distance. How much time will he take to cover that distance if his new speed is 20 kmph?</li>
+<li>If it takes 3 hours to drive a distance of 192 km on a motorway, what would be your speed?</li>
+</ol>
+
+<h3 id="future-tasks"><strong>Future Tasks</strong></h3>
+
+<p>We propose the following methods to overcome the challenges mentioned earlier and would be following our future work in this direction to improve the system:</p>
+
+<ol>
+<li><p>Automating the graph generation for any type of problem</p>
+
+<ul>
+<li>Graph Neural Nets are highly effective in handling word to graph manipulations. They should work out better in handling linking between different objects.</li>
+<li>The monotonic and sequential nature of the quantities can be derived using Semantic Role Labeller. This would be helpful in adding word-to-quantity manipulations in general.</li>
+</ul></li>
+
+<li><p>Synonymous descriptions like associating length to distance, age to time can be worked by training a ML classifier to associate these labels to noun-phrases. Semantic similarity or paraphrase matching systems might work out better in these.</p></li>
+
+<li><p>There are some relationships which are not given by function space but rather by ownership like a distance travelled by a car is owned by the agent(car). Such relationships can help in handling ambiguity in associating quantities together.</p></li>
+</ol>
+
     </div>
 
     
 
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/nlp/">NLP</a>
+  
+  <a class="badge badge-light" href="/tags/deep_learning/">deep_learning</a>
+  
+  <a class="badge badge-light" href="/tags/education/">education</a>
+  
+  <a class="badge badge-light" href="/tags/depth_first_search/">depth_first_search</a>
+  
+  <a class="badge badge-light" href="/tags/automated_concept_graph/">automated_concept_graph</a>
+  
+</div>
+
 
     
 
@@ -518,6 +662,10 @@
 
 
 
+  
+  
+    
+  
   
 
 
