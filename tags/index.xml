@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Varun</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Jul 2019 10:02:51 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 15 Nov 2019 01:50:11 +0100</lastBuildDate>
     
 	    <atom:link href="https://vkkhare.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>backprop</title>
+      <link>https://vkkhare.github.io/tags/backprop/</link>
+      <pubDate>Fri, 15 Nov 2019 01:50:11 +0100</pubDate>
+      
+      <guid>https://vkkhare.github.io/tags/backprop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>biology</title>
+      <link>https://vkkhare.github.io/tags/biology/</link>
+      <pubDate>Fri, 15 Nov 2019 01:50:11 +0100</pubDate>
+      
+      <guid>https://vkkhare.github.io/tags/biology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>deep_learning</title>
+      <link>https://vkkhare.github.io/tags/deep_learning/</link>
+      <pubDate>Fri, 15 Nov 2019 01:50:11 +0100</pubDate>
+      
+      <guid>https://vkkhare.github.io/tags/deep_learning/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>computer_vision</title>
@@ -17,15 +44,6 @@
       <pubDate>Thu, 11 Jul 2019 10:02:51 +0530</pubDate>
       
       <guid>https://vkkhare.github.io/tags/computer_vision/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>deep_learning</title>
-      <link>https://vkkhare.github.io/tags/deep_learning/</link>
-      <pubDate>Thu, 11 Jul 2019 10:02:51 +0530</pubDate>
-      
-      <guid>https://vkkhare.github.io/tags/deep_learning/</guid>
       <description></description>
     </item>
     
@@ -57,15 +75,6 @@
     </item>
     
     <item>
-      <title>ReLU</title>
-      <link>https://vkkhare.github.io/tags/relu/</link>
-      <pubDate>Wed, 11 Apr 2018 09:57:10 +0530</pubDate>
-      
-      <guid>https://vkkhare.github.io/tags/relu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>adversarial_corruption</title>
       <link>https://vkkhare.github.io/tags/adversarial_corruption/</link>
       <pubDate>Wed, 11 Apr 2018 09:57:10 +0530</pubDate>
@@ -75,20 +84,20 @@
     </item>
     
     <item>
+      <title>ReLU</title>
+      <link>https://vkkhare.github.io/tags/relu/</link>
+      <pubDate>Wed, 11 Apr 2018 09:57:10 +0530</pubDate>
+      
+      <guid>https://vkkhare.github.io/tags/relu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>theory</title>
       <link>https://vkkhare.github.io/tags/theory/</link>
       <pubDate>Wed, 11 Apr 2018 09:57:10 +0530</pubDate>
       
       <guid>https://vkkhare.github.io/tags/theory/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>NLP</title>
-      <link>https://vkkhare.github.io/tags/nlp/</link>
-      <pubDate>Thu, 23 Nov 2017 09:57:28 +0530</pubDate>
-      
-      <guid>https://vkkhare.github.io/tags/nlp/</guid>
       <description></description>
     </item>
     
@@ -116,6 +125,15 @@
       <pubDate>Thu, 23 Nov 2017 09:57:28 +0530</pubDate>
       
       <guid>https://vkkhare.github.io/tags/education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NLP</title>
+      <link>https://vkkhare.github.io/tags/nlp/</link>
+      <pubDate>Thu, 23 Nov 2017 09:57:28 +0530</pubDate>
+      
+      <guid>https://vkkhare.github.io/tags/nlp/</guid>
       <description></description>
     </item>
     

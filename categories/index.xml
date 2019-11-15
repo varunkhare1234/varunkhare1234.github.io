@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Varun</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Apr 2018 09:57:10 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 15 Nov 2019 01:50:11 +0100</lastBuildDate>
     
 	    <atom:link href="https://vkkhare.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>paper review</title>
+      <link>https://vkkhare.github.io/categories/paper-review/</link>
+      <pubDate>Fri, 15 Nov 2019 01:50:11 +0100</pubDate>
+      
+      <guid>https://vkkhare.github.io/categories/paper-review/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>research</title>
