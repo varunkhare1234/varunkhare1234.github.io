@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>security on Varun</title>
+    <link>https://vkkhare.github.io/tags/security/</link>
+    <description>Recent content in security on Varun</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Jul 2019 10:02:51 +0530</lastBuildDate>
+    
+	    <atom:link href="https://vkkhare.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>KotlinSyft</title>
+      <link>https://vkkhare.github.io/project/kotlinsyft/</link>
+      <pubDate>Thu, 11 Jul 2019 10:02:51 +0530</pubDate>
+      
+      <guid>https://vkkhare.github.io/project/kotlinsyft/</guid>
+      <description>&lt;p&gt;PySyft is a Python library for secure and private Deep Learning. PySyft decouples private data from model training, using
+&lt;a href=&#34;https://ai.googleblog.com/2017/04/federated-learning-collaborative.html&#34; target=&#34;_blank&#34;&gt;Federated Learning&lt;/a&gt;,
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Differential_privacy&#34; target=&#34;_blank&#34;&gt;Differential Privacy&lt;/a&gt;,
+and Encrypted Computation (like
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Secure_multi-party_computation&#34; target=&#34;_blank&#34;&gt;Multi-Party Computation (MPC)&lt;/a&gt;
+and  &lt;a href=&#34;https://en.wikipedia.org/wiki/Homomorphic_encryption&#34; target=&#34;_blank&#34;&gt;Homomorphic Encryption (HE)&lt;/a&gt;)
+within the main Deep Learning frameworks like PyTorch and TensorFlow. Join the movement on
+&lt;a href=&#34;http://slack.openmined.org/&#34; target=&#34;_blank&#34;&gt;Slack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;KotlinSyft employs P2P connectivity for realization of distributed pysyft protocols on android workers. The local training is performed using PyTorch as a background service. &lt;a href=&#34;The first use case for our andorid worker library is here&#34; target=&#34;_blank&#34;&gt;https://blog.openmined.org/apheris-openmined-pytorch-announcement&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
