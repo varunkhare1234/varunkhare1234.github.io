@@ -6,7 +6,6 @@
     <description>Recent content on Varun</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Nov 2019 01:50:11 +0100</lastBuildDate>
     
 	    <atom:link href="https://vkkhare.github.io/authors/varun/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,17 +16,11 @@
       <pubDate>Fri, 15 Nov 2019 01:50:11 +0100</pubDate>
       
       <guid>https://vkkhare.github.io/post/biological_networks/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/1811.03567.pdf&#34; target=&#34;_blank&#34;&gt;Biologically-Plausible Learning Algorithms Can Scale to Large Datasets&lt;/a&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/1811.03567.pdf&#34;&gt;Biologically-Plausible Learning Algorithms Can Scale to Large Datasets&lt;/a&gt;
 by Will Xiao[1], Honglin Chen[2], Qianli Liao[2] and Tomaso Poggio[2]&lt;/p&gt;
-
 &lt;p&gt;[1] Department of Molecular and Cellular Biology, Harvard University&lt;/p&gt;
-
 &lt;p&gt;[2] Center for Brains, Minds, and Machines, MIT&lt;/p&gt;
-
 &lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
-
 &lt;p&gt;Consider a layer in a feedforward neural network. Let &lt;strong&gt;x&lt;/strong&gt;i denote the input to the i th neuron in the layer and &lt;strong&gt;y&lt;/strong&gt;j the output of the j th neuron. Let &lt;strong&gt;W&lt;/strong&gt; denote the feedforward weight matrix and &lt;strong&gt;W&lt;/strong&gt;ij the connection between input &lt;strong&gt;x&lt;/strong&gt;i and output &lt;strong&gt;y&lt;/strong&gt;. Let f denote the activation function. Then, Equation 1 describes the computation in the feedforward step. The feedback step propagates the error signals using equation 2.
 
 
@@ -42,29 +35,31 @@ by Will Xiao[1], Honglin Chen[2], Qianli Liao[2] and Tomaso Poggio[2]&lt;/p&gt;
 
 &lt;/figure&gt;
 &lt;/p&gt;
-
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;If &lt;strong&gt;B=W&lt;/strong&gt; we have standard backpropagation algorithm&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Sign Symmetry Backpropagation Algorithm has &lt;strong&gt;B = sign(W)&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Feedback Alignment Backpropagation Algorithm has &lt;strong&gt;B&lt;/strong&gt; as a random fixed matrix&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If &lt;strong&gt;B=W&lt;/strong&gt; we have standard backpropagation algorithm&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sign Symmetry Backpropagation Algorithm has &lt;strong&gt;B = sign(W)&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Feedback Alignment Backpropagation Algorithm has &lt;strong&gt;B&lt;/strong&gt; as a random fixed matrix&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h2 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h2&gt;
-
 &lt;h3 id=&#34;sign-symmetry&#34;&gt;SIGN SYMMETRY&lt;/h3&gt;
-
 &lt;p&gt;Imagenet:&lt;/p&gt;
-
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Sign symmetry only slightly underperformed Backprop on Imagenet.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;No effect of having backprop in the last layer unlike FA&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Better than FA likely because sign information allows for easier feedforward and feedback weights alignment&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sign symmetry only slightly underperformed Backprop on Imagenet.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;No effect of having backprop in the last layer unlike FA&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Better than FA likely because sign information allows for easier feedforward and feedback weights alignment&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
 
 
 
@@ -80,21 +75,18 @@ by Will Xiao[1], Honglin Chen[2], Qianli Liao[2] and Tomaso Poggio[2]&lt;/p&gt;
 
 &lt;/figure&gt;
 
-
 &lt;h3 id=&#34;feedback-alignment&#34;&gt;FEEDBACK ALIGNMENT&lt;/h3&gt;
-
-&lt;p&gt;According to &lt;a href=&#34;https://www.nature.com/articles/ncomms13276&#34; target=&#34;_blank&#34;&gt;lilicrap et. al&lt;/a&gt; even though the feedback weights are random the error signals still lie within the 90 degrees of true error signals calculated from backprop. Thus the model is still capable of moving along the real direction.&lt;/p&gt;
-
+&lt;p&gt;According to &lt;a href=&#34;https://www.nature.com/articles/ncomms13276&#34;&gt;lilicrap et. al&lt;/a&gt; even though the feedback weights are random the error signals still lie within the 90 degrees of true error signals calculated from backprop. Thus the model is still capable of moving along the real direction.&lt;/p&gt;
 &lt;p&gt;Imagenet:&lt;/p&gt;
-
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Better than reported by &lt;a href=&#34;https://arxiv.org/abs/1807.04587&#34; target=&#34;_blank&#34;&gt;bartunov et al&lt;/a&gt; if backprop used to train the final classification. The authors claim the exact error calculation (loss evaluation) is likely not softmax so it can come by a different mechanism.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.nature.com/articles/ncomms13276&#34; target=&#34;_blank&#34;&gt;Lillicrap et al.&lt;/a&gt; (2016) show that with feedback alignment, the alignment angles between feedforward and feedback weights gradually decrease because the feedforward weights learn to align with the feedback weights&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Better than reported by &lt;a href=&#34;https://arxiv.org/abs/1807.04587&#34;&gt;bartunov et al&lt;/a&gt; if backprop used to train the final classification. The authors claim the exact error calculation (loss evaluation) is likely not softmax so it can come by a different mechanism.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.nature.com/articles/ncomms13276&#34;&gt;Lillicrap et al.&lt;/a&gt; (2016) show that with feedback alignment, the alignment angles between feedforward and feedback weights gradually decrease because the feedforward weights learn to align with the feedback weights&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h2 id=&#34;interesting-lines-of-work-and-validation-experiments&#34;&gt;Interesting lines of work and validation experiments&lt;/h2&gt;
-
 &lt;ul&gt;
 &lt;li&gt;The existence of the feedforward and feedback pathways specifically aligned in an antiparallel way to justify sign symmetry.&lt;/li&gt;
 &lt;li&gt;Incorporation of Dale&amp;rsquo;s Law so as to ensure neurons don&amp;rsquo;t change their sign during the entire learning process.
@@ -110,33 +102,20 @@ BP, FA, all of the TP variants, and indeed most known activation propagation alg
       <pubDate>Thu, 23 Nov 2017 09:57:28 +0530</pubDate>
       
       <guid>https://vkkhare.github.io/project/word-problem-solver/</guid>
-      <description>
-
-&lt;h3 id=&#34;problem-statement&#34;&gt;&lt;strong&gt;Problem Statement&lt;/strong&gt;&lt;/h3&gt;
-
+      <description>&lt;h3 id=&#34;problem-statement&#34;&gt;&lt;strong&gt;Problem Statement&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;Given a preliminary word problem based on speed, time and distance
 relationship in natural language, generate a step-by-step solution for it&lt;/p&gt;
-
 &lt;h3 id=&#34;proposed-solution&#34;&gt;&lt;strong&gt;Proposed Solution&lt;/strong&gt;&lt;/h3&gt;
-
 &lt;p&gt;Our approach to solve mathematical word problems is based on the ability of represent the problem via relationships between various object described in the text. We start out by creating a graph which represents the hypothetical world described in the problem with a global function space defining the rules/association between different types of objects.&lt;/p&gt;
-
 &lt;p&gt;We keep on adding nodes in the graph as when a new object (Noun Phrase) appears in the text and depict the association between two objects by an edge between them. If multiple functions are there multiple types of edges need to be created. If a Noun Phrase is an anaphora, all the objects which would have been linked to this noun phrase would instead be linked with the representative mention and node corresponding to the current Noun Phrase won’t be added to the graph.&lt;/p&gt;
-
 &lt;p&gt;A set of nodes are eligible as arguments for a function iff they correspond to the object types used in the functional relationship and are connected by edges corresponding to the function. Each measurable quantity has a value attribute associated to it which
 stores the value of that quantity. Once the graph is generated, we need to calculate the value of the query node. To do this, we traverse the graph starting DFS at query node (Top-Down approach) and check if we are able to calculate its value along any one of the computation path. We work recursively to evaluate all the nodes of the computation path from leaf and then finally evaluate the value of the root node. The following figures explain the graph construction.
-&lt;img src=&#34;https://vkkhare.github.io/img/word_prob.png&#34; alt=&#34;automated concept graph generation&#34; /&gt;&lt;/p&gt;
-
+&lt;img src=&#34;https://vkkhare.github.io/img/word_prob.png&#34; alt=&#34;automated concept graph generation&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;The implimentation details are available in project report.&lt;/em&gt;&lt;/p&gt;
-
 &lt;h3 id=&#34;testing&#34;&gt;&lt;strong&gt;Testing&lt;/strong&gt;&lt;/h3&gt;
-
 &lt;p&gt;The problems that it could understand were restricted and testing needed a controlled environment. The biggest challenge that we faced was handling prior world knowledge in the system. Currently, we only took those problem which didn’t need this world-knowledge for evaluation. This assumption seems a bit heavy so, we came up with an approach to incorporate it and have left it under future work for testing and validating its effectiveness.&lt;/p&gt;
-
 &lt;p&gt;We also assumed that the problems didn’t need the knowledge of monotonic nature of the quantities and the association of words to modifications in the values of quantities like &lt;em&gt;Late&lt;/em&gt; w.r.t &lt;em&gt;time&lt;/em&gt; refers to addition of time to certain time object similarly longer w.r.t distance implies higher magnitude.&lt;/p&gt;
-
 &lt;p&gt;Owing to a deterministic algorithm for query solving, if the system was able to understand the language it gives the correct answer. So, we took a set of 11 different type of problems that needed only Distance = Speed*Time as relationship. Out of these we were able to solve 7 problems some of which are mentioned below:&lt;/p&gt;
-
 &lt;ol&gt;
 &lt;li&gt;How much time Raman will take to cover a distance of 400 km if he runs at a speed of 20 kmph ?&lt;/li&gt;
 &lt;li&gt;The distance between two stations is 240 km. A train takes 4 hours to cover that distance. Calculate the speed of the train.&lt;/li&gt;
@@ -145,22 +124,22 @@ stores the value of that quantity. Once the graph is generated, we need to calcu
 &lt;li&gt;Ramesh travels at a speed of 30 kmph for a time of 2 hours to travel a certain distance. How much time will he take to cover that distance if his new speed is 20 kmph?&lt;/li&gt;
 &lt;li&gt;If it takes 3 hours to drive a distance of 192 km on a motorway, what would be your speed?&lt;/li&gt;
 &lt;/ol&gt;
-
 &lt;h3 id=&#34;future-tasks&#34;&gt;&lt;strong&gt;Future Tasks&lt;/strong&gt;&lt;/h3&gt;
-
 &lt;p&gt;We propose the following methods to overcome the challenges mentioned earlier and would be following our future work in this direction to improve the system:&lt;/p&gt;
-
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Automating the graph generation for any type of problem&lt;/p&gt;
-
+&lt;li&gt;
+&lt;p&gt;Automating the graph generation for any type of problem&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Graph Neural Nets are highly effective in handling word to graph manipulations. They should work out better in handling linking between different objects.&lt;/li&gt;
 &lt;li&gt;The monotonic and sequential nature of the quantities can be derived using Semantic Role Labeller. This would be helpful in adding word-to-quantity manipulations in general.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Synonymous descriptions like associating length to distance, age to time can be worked by training a ML classifier to associate these labels to noun-phrases. Semantic similarity or paraphrase matching systems might work out better in these.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;There are some relationships which are not given by function space but rather by ownership like a distance travelled by a car is owned by the agent(car). Such relationships can help in handling ambiguity in associating quantities together.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Synonymous descriptions like associating length to distance, age to time can be worked by training a ML classifier to associate these labels to noun-phrases. Semantic similarity or paraphrase matching systems might work out better in these.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There are some relationships which are not given by function space but rather by ownership like a distance travelled by a car is owned by the agent(car). Such relationships can help in handling ambiguity in associating quantities together.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 </description>
     </item>
@@ -171,34 +150,29 @@ stores the value of that quantity. Once the graph is generated, we need to calcu
       <pubDate>Wed, 06 Jul 2016 16:42:00 +0530</pubDate>
       
       <guid>https://vkkhare.github.io/project/ar-navigation/</guid>
-      <description>
-
-&lt;h3 id=&#34;about-the-project&#34;&gt;About The Project&lt;/h3&gt;
-
+      <description>&lt;h3 id=&#34;about-the-project&#34;&gt;About The Project&lt;/h3&gt;
 &lt;p&gt;We tried out experimenting Augmented Reality as a summer project. Our aim was to design a navigation app which instead of showing top view of map shows directions on real time camera feed. This will have two fold benefits:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;The users will not have to match roads and adjust map to understand where to go&lt;/li&gt;
 &lt;li&gt;Since it shows real time camera feed the user can remain in real world while looking for directions preventing accidents&lt;/li&gt;
 &lt;li&gt;Received the &lt;strong&gt;Best Programming Club Project&lt;/strong&gt; during the Science &amp;amp; Technology Summer Camp 2016.&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h3 id=&#34;approach-to-inculcate-ar-in-android-app&#34;&gt;Approach to inculcate AR in android app&lt;/h3&gt;
-
 &lt;p&gt;Unlike infrared sensors we didn&amp;rsquo;t have any means to calculate the exact distance of the real time objects in the mobiles so we switched to MATHEMATICS for our answers. OH! Technical Arts also played a key role in devising our strategy.&lt;/p&gt;
-
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;We used GPS data combiined with mobiles orientation from Magnetic Compass to detect roads. Here Google Directions API came in handy to give the precise coordinates of the roads.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;We measured the relative motion of the user via gyroscope, accelerometer and GPS coordinates&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The Unity graphics were relayed on the camera feed via UNITY GAME ENGINE giving the graphics (navigating arrows) a psuedo-acceleration to look static on the ground.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We used GPS data combiined with mobiles orientation from Magnetic Compass to detect roads. Here Google Directions API came in handy to give the precise coordinates of the roads.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We measured the relative motion of the user via gyroscope, accelerometer and GPS coordinates&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Unity graphics were relayed on the camera feed via UNITY GAME ENGINE giving the graphics (navigating arrows) a psuedo-acceleration to look static on the ground.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
-
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.sitepoint.com/how-to-build-an-ar-android-app-with-vuforia-and-unity/&#34; target=&#34;_blank&#34;&gt;https://www.sitepoint.com/how-to-build-an-ar-android-app-with-vuforia-and-unity/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sitepoint.com/how-to-build-an-ar-android-app-with-vuforia-and-unity/&#34;&gt;https://www.sitepoint.com/how-to-build-an-ar-android-app-with-vuforia-and-unity/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Android Documentation&lt;/li&gt;
 &lt;/ul&gt;
 </description>

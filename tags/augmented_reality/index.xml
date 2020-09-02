@@ -17,34 +17,29 @@
       <pubDate>Wed, 06 Jul 2016 16:42:00 +0530</pubDate>
       
       <guid>https://vkkhare.github.io/project/ar-navigation/</guid>
-      <description>
-
-&lt;h3 id=&#34;about-the-project&#34;&gt;About The Project&lt;/h3&gt;
-
+      <description>&lt;h3 id=&#34;about-the-project&#34;&gt;About The Project&lt;/h3&gt;
 &lt;p&gt;We tried out experimenting Augmented Reality as a summer project. Our aim was to design a navigation app which instead of showing top view of map shows directions on real time camera feed. This will have two fold benefits:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;The users will not have to match roads and adjust map to understand where to go&lt;/li&gt;
 &lt;li&gt;Since it shows real time camera feed the user can remain in real world while looking for directions preventing accidents&lt;/li&gt;
 &lt;li&gt;Received the &lt;strong&gt;Best Programming Club Project&lt;/strong&gt; during the Science &amp;amp; Technology Summer Camp 2016.&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h3 id=&#34;approach-to-inculcate-ar-in-android-app&#34;&gt;Approach to inculcate AR in android app&lt;/h3&gt;
-
 &lt;p&gt;Unlike infrared sensors we didn&amp;rsquo;t have any means to calculate the exact distance of the real time objects in the mobiles so we switched to MATHEMATICS for our answers. OH! Technical Arts also played a key role in devising our strategy.&lt;/p&gt;
-
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;We used GPS data combiined with mobiles orientation from Magnetic Compass to detect roads. Here Google Directions API came in handy to give the precise coordinates of the roads.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;We measured the relative motion of the user via gyroscope, accelerometer and GPS coordinates&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The Unity graphics were relayed on the camera feed via UNITY GAME ENGINE giving the graphics (navigating arrows) a psuedo-acceleration to look static on the ground.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We used GPS data combiined with mobiles orientation from Magnetic Compass to detect roads. Here Google Directions API came in handy to give the precise coordinates of the roads.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We measured the relative motion of the user via gyroscope, accelerometer and GPS coordinates&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Unity graphics were relayed on the camera feed via UNITY GAME ENGINE giving the graphics (navigating arrows) a psuedo-acceleration to look static on the ground.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
-
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.sitepoint.com/how-to-build-an-ar-android-app-with-vuforia-and-unity/&#34; target=&#34;_blank&#34;&gt;https://www.sitepoint.com/how-to-build-an-ar-android-app-with-vuforia-and-unity/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sitepoint.com/how-to-build-an-ar-android-app-with-vuforia-and-unity/&#34;&gt;https://www.sitepoint.com/how-to-build-an-ar-android-app-with-vuforia-and-unity/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Android Documentation&lt;/li&gt;
 &lt;/ul&gt;
 </description>

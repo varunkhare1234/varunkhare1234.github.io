@@ -16,17 +16,11 @@
       <pubDate>Fri, 15 Nov 2019 01:50:11 +0100</pubDate>
       
       <guid>https://vkkhare.github.io/post/biological_networks/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/1811.03567.pdf&#34; target=&#34;_blank&#34;&gt;Biologically-Plausible Learning Algorithms Can Scale to Large Datasets&lt;/a&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/1811.03567.pdf&#34;&gt;Biologically-Plausible Learning Algorithms Can Scale to Large Datasets&lt;/a&gt;
 by Will Xiao[1], Honglin Chen[2], Qianli Liao[2] and Tomaso Poggio[2]&lt;/p&gt;
-
 &lt;p&gt;[1] Department of Molecular and Cellular Biology, Harvard University&lt;/p&gt;
-
 &lt;p&gt;[2] Center for Brains, Minds, and Machines, MIT&lt;/p&gt;
-
 &lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
-
 &lt;p&gt;Consider a layer in a feedforward neural network. Let &lt;strong&gt;x&lt;/strong&gt;i denote the input to the i th neuron in the layer and &lt;strong&gt;y&lt;/strong&gt;j the output of the j th neuron. Let &lt;strong&gt;W&lt;/strong&gt; denote the feedforward weight matrix and &lt;strong&gt;W&lt;/strong&gt;ij the connection between input &lt;strong&gt;x&lt;/strong&gt;i and output &lt;strong&gt;y&lt;/strong&gt;. Let f denote the activation function. Then, Equation 1 describes the computation in the feedforward step. The feedback step propagates the error signals using equation 2.
 
 
@@ -41,29 +35,31 @@ by Will Xiao[1], Honglin Chen[2], Qianli Liao[2] and Tomaso Poggio[2]&lt;/p&gt;
 
 &lt;/figure&gt;
 &lt;/p&gt;
-
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;If &lt;strong&gt;B=W&lt;/strong&gt; we have standard backpropagation algorithm&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Sign Symmetry Backpropagation Algorithm has &lt;strong&gt;B = sign(W)&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Feedback Alignment Backpropagation Algorithm has &lt;strong&gt;B&lt;/strong&gt; as a random fixed matrix&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If &lt;strong&gt;B=W&lt;/strong&gt; we have standard backpropagation algorithm&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sign Symmetry Backpropagation Algorithm has &lt;strong&gt;B = sign(W)&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Feedback Alignment Backpropagation Algorithm has &lt;strong&gt;B&lt;/strong&gt; as a random fixed matrix&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h2 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h2&gt;
-
 &lt;h3 id=&#34;sign-symmetry&#34;&gt;SIGN SYMMETRY&lt;/h3&gt;
-
 &lt;p&gt;Imagenet:&lt;/p&gt;
-
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Sign symmetry only slightly underperformed Backprop on Imagenet.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;No effect of having backprop in the last layer unlike FA&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Better than FA likely because sign information allows for easier feedforward and feedback weights alignment&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sign symmetry only slightly underperformed Backprop on Imagenet.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;No effect of having backprop in the last layer unlike FA&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Better than FA likely because sign information allows for easier feedforward and feedback weights alignment&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
 
 
 
@@ -79,21 +75,18 @@ by Will Xiao[1], Honglin Chen[2], Qianli Liao[2] and Tomaso Poggio[2]&lt;/p&gt;
 
 &lt;/figure&gt;
 
-
 &lt;h3 id=&#34;feedback-alignment&#34;&gt;FEEDBACK ALIGNMENT&lt;/h3&gt;
-
-&lt;p&gt;According to &lt;a href=&#34;https://www.nature.com/articles/ncomms13276&#34; target=&#34;_blank&#34;&gt;lilicrap et. al&lt;/a&gt; even though the feedback weights are random the error signals still lie within the 90 degrees of true error signals calculated from backprop. Thus the model is still capable of moving along the real direction.&lt;/p&gt;
-
+&lt;p&gt;According to &lt;a href=&#34;https://www.nature.com/articles/ncomms13276&#34;&gt;lilicrap et. al&lt;/a&gt; even though the feedback weights are random the error signals still lie within the 90 degrees of true error signals calculated from backprop. Thus the model is still capable of moving along the real direction.&lt;/p&gt;
 &lt;p&gt;Imagenet:&lt;/p&gt;
-
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Better than reported by &lt;a href=&#34;https://arxiv.org/abs/1807.04587&#34; target=&#34;_blank&#34;&gt;bartunov et al&lt;/a&gt; if backprop used to train the final classification. The authors claim the exact error calculation (loss evaluation) is likely not softmax so it can come by a different mechanism.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.nature.com/articles/ncomms13276&#34; target=&#34;_blank&#34;&gt;Lillicrap et al.&lt;/a&gt; (2016) show that with feedback alignment, the alignment angles between feedforward and feedback weights gradually decrease because the feedforward weights learn to align with the feedback weights&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Better than reported by &lt;a href=&#34;https://arxiv.org/abs/1807.04587&#34;&gt;bartunov et al&lt;/a&gt; if backprop used to train the final classification. The authors claim the exact error calculation (loss evaluation) is likely not softmax so it can come by a different mechanism.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.nature.com/articles/ncomms13276&#34;&gt;Lillicrap et al.&lt;/a&gt; (2016) show that with feedback alignment, the alignment angles between feedforward and feedback weights gradually decrease because the feedforward weights learn to align with the feedback weights&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h2 id=&#34;interesting-lines-of-work-and-validation-experiments&#34;&gt;Interesting lines of work and validation experiments&lt;/h2&gt;
-
 &lt;ul&gt;
 &lt;li&gt;The existence of the feedforward and feedback pathways specifically aligned in an antiparallel way to justify sign symmetry.&lt;/li&gt;
 &lt;li&gt;Incorporation of Dale&amp;rsquo;s Law so as to ensure neurons don&amp;rsquo;t change their sign during the entire learning process.
