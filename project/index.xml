@@ -17,15 +17,27 @@
       <pubDate>Thu, 11 Jul 2019 10:02:51 +0530</pubDate>
       
       <guid>https://vkkhare.github.io/project/kotlinsyft/</guid>
-      <description>&lt;p&gt;PySyft is a Python library for secure and private Deep Learning. PySyft decouples private data from model training, using
-&lt;a href=&#34;https://ai.googleblog.com/2017/04/federated-learning-collaborative.html&#34;&gt;Federated Learning&lt;/a&gt;,
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Differential_privacy&#34;&gt;Differential Privacy&lt;/a&gt;,
-and Encrypted Computation (like
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Secure_multi-party_computation&#34;&gt;Multi-Party Computation (MPC)&lt;/a&gt;
-and  &lt;a href=&#34;https://en.wikipedia.org/wiki/Homomorphic_encryption&#34;&gt;Homomorphic Encryption (HE)&lt;/a&gt;)
-within the main Deep Learning frameworks like PyTorch and TensorFlow. Join the movement on
-&lt;a href=&#34;http://slack.openmined.org/&#34;&gt;Slack&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;KotlinSyft employs P2P connectivity for realization of distributed pysyft protocols on android workers. The local training is performed using PyTorch as a background service. [https://blog.openmined.org/apheris-openmined-pytorch-announcement](The first use case for our andorid worker library is here)&lt;/p&gt;
+      <description>&lt;p&gt;KotlinSyft makes it easy for you to &lt;strong&gt;train and execute PySyft models on Android devices&lt;/strong&gt;. This allows you to utilize training data located directly on the device itself, bypassing the need to send a user&amp;rsquo;s data to a central server. This is known as &lt;a href=&#34;https://ai.googleblog.com/2017/04/federated-learning-collaborative.html&#34;&gt;federated learning&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;⚙ &lt;strong&gt;Training and inference&lt;/strong&gt; of any PySyft model written in PyTorch or TensorFlow&lt;/li&gt;
+&lt;li&gt;👤 Allows all data to stay on the user&amp;rsquo;s device&lt;/li&gt;
+&lt;li&gt;⚡ Support for full multi-threading / background service execution&lt;/li&gt;
+&lt;li&gt;🔑 Support for &lt;strong&gt;JWT authentication&lt;/strong&gt; to protect models from Sybil attacks&lt;/li&gt;
+&lt;li&gt;👍 A set of &lt;strong&gt;inbuilt best practices&lt;/strong&gt; to prevent apps from over using device resources.
+&lt;ul&gt;
+&lt;li&gt;🔌 &lt;strong&gt;Charge detection&lt;/strong&gt; to allow background training only when device is connected to charger&lt;/li&gt;
+&lt;li&gt;💤 &lt;strong&gt;Sleep and wake detection&lt;/strong&gt; so that the app does not occupy resource when user starts using the device&lt;/li&gt;
+&lt;li&gt;💸 &lt;strong&gt;Wifi and metered network detection&lt;/strong&gt; to ensure the model updates do not use all the available data quota&lt;/li&gt;
+&lt;li&gt;🔕 All of these smart defaults are easily are &lt;strong&gt;overridable&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;🎓 Support for both reactive and callback patterns so you have your freedom of choice (&lt;em&gt;in progress&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;🔒 Support for &lt;strong&gt;secure multi-party computation&lt;/strong&gt; and &lt;strong&gt;secure aggregation&lt;/strong&gt; protocols using &lt;strong&gt;peer-to-peer WebRTC&lt;/strong&gt; connections (&lt;em&gt;in progress&lt;/em&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are a variety of additional privacy-preserving protections that may be applied, including &lt;a href=&#34;https://towardsdatascience.com/understanding-differential-privacy-85ce191e198a&#34;&gt;differential privacy&lt;/a&gt;, &lt;a href=&#34;https://www.inpher.io/technology/what-is-secure-multiparty-computation&#34;&gt;muliti-party computation&lt;/a&gt;, and &lt;a href=&#34;https://research.google/pubs/pub45808/&#34;&gt;secure aggregation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://openmined.org&#34;&gt;OpenMined&lt;/a&gt; set out to build the &lt;strong&gt;world&amp;rsquo;s first open-source ecosystem for federated learning on web and mobile&lt;/strong&gt;. KotlinSyft is a part of this ecosystem, responsible for bringing secure federated learning to Android devices. You may also train models on iOS devices using &lt;a href=&#34;https://github.com/OpenMined/SwiftSyft&#34;&gt;SwiftSyft&lt;/a&gt; or in web browsers using &lt;a href=&#34;https://github.com/OpenMined/syft.js&#34;&gt;syft.js&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to know how scalable federated systems are built, &lt;a href=&#34;https://arxiv.org/pdf/1902.01046.pdf&#34;&gt;Towards Federated Learning at Scale&lt;/a&gt; is a fantastic introduction!&lt;/p&gt;
+&lt;p&gt;Join us in the movement at &lt;a href=&#34;http://slack.openmined.org/&#34;&gt;Slack&lt;/a&gt;!&lt;/p&gt;
 </description>
     </item>
     
